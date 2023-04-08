@@ -6,6 +6,15 @@ import streamlit as st
 
 st.set_page_config(layout= 'wide', page_title="India's data")
 
+st.header("About the project")
+
+st.markdown(""" 
+
+### In my project analyzing the 2011 Indian census survey, I used Plotly to create an interactive map of India with a dropdown feature that allowed users to select different states and parameters. By processing and cleaning the census data with Python, I was able to identify key differences across states, including variations in literacy rates, education levels, religion, sex ratio, and household characteristics.
+
+### Through my analysis, I identified differences in religion across different states, with some states having a much higher proportion of Hindus, while others had a higher proportion of Muslims. I was also able to identify differences in male vs. female ratios for each state, with some states having more males than females, and vice versa. By selecting different parameters, I was able to uncover even more insights
+""")
+
 df = pd.read_csv("India.csv")
 
 list_of_states =list(df['State'].unique())
